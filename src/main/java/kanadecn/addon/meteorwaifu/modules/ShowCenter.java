@@ -42,7 +42,7 @@ public class ShowCenter extends Module {
     /**
      * The {@code name} parameter should be in kebab-case.
      */
-    public ModuleExample() {
+    public ShowCenter() {
         super(MeteorWaifu.CATEGORY, "world-origin", "An example module that highlights the center of the world.");
     }
 
