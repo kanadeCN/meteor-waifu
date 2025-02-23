@@ -1,6 +1,6 @@
-package com.example.addon.modules;
+package kanadecn.addon.meteorwaifu.modules;
 
-import com.example.addon.AddonTemplate;
+import kanadecn.addon.meteorwaifu.MeteorWaifu;
 import meteordevelopment.meteorclient.events.render.Render3DEvent;
 import meteordevelopment.meteorclient.renderer.ShapeMode;
 import meteordevelopment.meteorclient.settings.ColorSetting;
@@ -14,7 +14,7 @@ import meteordevelopment.orbit.EventHandler;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
 
-public class ModuleExample extends Module {
+public class ShowCenter extends Module {
     private final SettingGroup sgGeneral = this.settings.getDefaultGroup();
     private final SettingGroup sgRender = this.settings.createGroup("Render");
 
@@ -43,7 +43,7 @@ public class ModuleExample extends Module {
      * The {@code name} parameter should be in kebab-case.
      */
     public ModuleExample() {
-        super(AddonTemplate.CATEGORY, "world-origin", "An example module that highlights the center of the world.");
+        super(MeteorWaifu.CATEGORY, "world-origin", "An example module that highlights the center of the world.");
     }
 
     /**

@@ -1,8 +1,8 @@
-package com.example.addon;
+package kanadecn.addon.meteorwaifu;
 
-import com.example.addon.commands.CommandExample;
-import com.example.addon.hud.HudExample;
-import com.example.addon.modules.ModuleExample;
+import kanadecn.addon.meteorwaifu.commands.*;
+import kanadecn.addon.meteorwaifu.hud.*;
+import kanadecn.addon.meteorwaifu.modules.*;
 import com.mojang.logging.LogUtils;
 import meteordevelopment.meteorclient.addons.GithubRepo;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
@@ -15,18 +15,18 @@ import org.slf4j.Logger;
 
 public class AddonTemplate extends MeteorAddon {
     public static final Logger LOG = LogUtils.getLogger();
-    public static final Category CATEGORY = new Category("Example");
-    public static final HudGroup HUD_GROUP = new HudGroup("Example");
+    public static final Category CATEGORY = new Category("Meteor Waifu");
+    public static final HudGroup HUD_GROUP = new HudGroup("MeteorWaifu");
 
     @Override
     public void onInitialize() {
-        LOG.info("Initializing Meteor Addon Template");
+        LOG.info("Initializing Meteor Waifu(＞人＜;)");
 
         // Modules
-        Modules.get().add(new ModuleExample());
+        Modules.get().add(new ShowCenter());
 
         // Commands
-        Commands.add(new CommandExample());
+        Commands.add(new CommandHelp());
 
         // HUD
         Hud.get().register(HudExample.INFO);
@@ -39,11 +39,11 @@ public class AddonTemplate extends MeteorAddon {
 
     @Override
     public String getPackage() {
-        return "com.example.addon";
+        return "kanadecn.addon.meteorwaifu";
     }
 
     @Override
     public GithubRepo getRepo() {
-        return new GithubRepo("MeteorDevelopment", "meteor-addon-template");
+        return new GithubRepo("kanadeCN", "meteor-waifu");
     }
 }

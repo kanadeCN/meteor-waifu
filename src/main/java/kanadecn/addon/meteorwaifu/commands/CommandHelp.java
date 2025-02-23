@@ -1,4 +1,4 @@
-package com.example.addon.commands;
+package kanadecn.addon.meteorwaifu.commands;
 
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
@@ -8,12 +8,12 @@ import net.minecraft.command.CommandSource;
 /**
  * The Meteor Client command API uses the <a href="https://github.com/Mojang/brigadier">same command system as Minecraft does</a>.
  */
-public class CommandExample extends Command {
+public class CommandHelp extends Command {
     /**
      * The {@code name} parameter should be in kebab-case.
      */
-    public CommandExample() {
-        super("example", "Sends a message.");
+    public CommandHelp() {
+        super("Info", "Teach you how to personalize the anime girls.");
     }
 
     @Override

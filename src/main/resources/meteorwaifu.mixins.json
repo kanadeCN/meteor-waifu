@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "kanadecn.addon.meteorwaifu.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "MeteorWaifuMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
