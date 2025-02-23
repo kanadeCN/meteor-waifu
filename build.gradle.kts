@@ -27,8 +27,6 @@ dependencies {
 
     // Meteor
     //modImplementation("meteordevelopment:meteor-client:${properties["minecraft_version"] as String}-SNAPSHOT")
-    modImplementation name: '1.20.6-SNAPSHOT'
-    include name: '1.20.6-SNAPSHOT'
 }
 
 tasks {
